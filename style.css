@@ -13,3 +13,7 @@ Text Domain: under
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 roxanne
 */
+
+h1 {
+    color: blue;
+}
