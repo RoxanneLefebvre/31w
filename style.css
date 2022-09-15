@@ -15,5 +15,6 @@ roxanne
 */
 
 h1 {
+    font-weight: bold;
     color: blue;
 }
