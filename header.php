@@ -25,6 +25,10 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
+			<?php wp_nav_menu(array(
+				"menu" => "Primaire",
+				"container"=>"nav"
+			))?>
 		<div class="site-branding">
 		
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -38,7 +42,4 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-<?php wp_nav_menu(array(
-	"menu" => "Primaire"
-))?>
 	</header><!-- #masthead -->

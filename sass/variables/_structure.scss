@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav ul li {
+    
+    list-style: none;
+    color: blue;
+}
+
+nav ul li a{
+    text-decoration: none;
+}

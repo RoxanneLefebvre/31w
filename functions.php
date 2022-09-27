@@ -12,6 +12,18 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+/**
+ * function qui cree mes menu
+ */
+
+function under_register_nav_menu(){
+	register_nav_menus( array(
+		'menu_primaire' => __( 'Menu primaire', 'text_domain' ),
+		// 'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
+	) );
+}
+add_action( 'after_setup_theme', 'under_register_nav_menu', 0 );
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -68,13 +80,7 @@ function under_scripts() {
 add_action( 'wp_enqueue_scripts', 'under_scripts' );
 
 
-function under_register_nav_menu(){
-	register_nav_menus( array(
-		'menu_primaire' => __( 'Menu primaire', 'text_domain' ),
-		// 'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
-	) );
-}
-add_action( 'after_setup_theme', 'under_register_nav_menu', 0 );
+
 
 
 
