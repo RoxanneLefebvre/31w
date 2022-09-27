@@ -1,4 +1,10 @@
 body {
     background-color: $color__background-body;
     font-family: $font__main;
+    padding-left: 20px;
+}
+
+.trace {
+    background-color: red;
+    width: max-content;
 }

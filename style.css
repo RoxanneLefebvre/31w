@@ -335,8 +335,14 @@ html {
 }
 
 body {
-  background-color: rgb(234, 189, 245);
+  background-color: rgb(255, 255, 255);
   font-family: arial;
+  padding-left: 20px;
+}
+
+.trace {
+  background-color: red;
+  width: max-content;
 }
 
 h1 {
