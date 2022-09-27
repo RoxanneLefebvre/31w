@@ -38,5 +38,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-
+<?php wp_nav_menu(array(
+	"menu" => "Primaire"
+))?>
 	</header><!-- #masthead -->

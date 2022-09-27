@@ -68,4 +68,14 @@ function under_scripts() {
 add_action( 'wp_enqueue_scripts', 'under_scripts' );
 
 
+function under_register_nav_menu(){
+	register_nav_menus( array(
+		'menu_primaire' => __( 'Menu primaire', 'text_domain' ),
+		// 'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
+	) );
+}
+add_action( 'after_setup_theme', 'under_register_nav_menu', 0 );
+
+
+
 

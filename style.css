@@ -13,6 +13,7 @@ Text Domain: under
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 roxanne
 */
+/*************************************************************couleur liens****************************************/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -348,4 +349,28 @@ body {
 h1 {
   font-weight: bold;
   color: rgb(0, 0, 0);
+}
+
+h2 {
+  color: rgb(79, 5, 209);
+}
+
+code {
+  color: red;
+}
+
+a {
+  color: rgb(0, 0, 0);
+}
+a:visited {
+  color: rgb(48, 24, 54);
+}
+a:hover, a:focus, a:active {
+  color: rgb(153, 25, 245);
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
 }/*# sourceMappingURL=style.css.map */
