@@ -1,4 +1,4 @@
-$color__background-body: rgb(255, 255, 255);
+$color__background-body: rgb(231, 30, 30);
 $color__h1: rgb(0, 0, 0);
 $color__h2: rgb(79, 5, 209);
 
@@ -15,6 +15,14 @@ $color__border-button--hover:rgb(8, 8, 118);
 $color__border-button-focus:red;
 
 /*couleur field input*/
-$color__border-input:gray;
-$color__text-input-focus:red;
-$color__text-input:rgb(0, 0, 0);
+$color__border--input:gray;
+$color__text-input--focus:red;
+$color__text--input:rgb(0, 0, 0);
+
+/*couleur HR*/
+$color__background--hr:rgb(197, 197, 238);
+
+/*simple*/
+$color__background--pre:rgb(0, 255, 76);
+$color__border-abbr:purple;
+$color__background-ins:rgb(213, 19, 213);
