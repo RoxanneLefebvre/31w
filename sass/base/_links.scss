@@ -20,3 +20,13 @@ a {
 		outline: 0;
 	}
 }
+
+.menu__aside a {
+	color: $color__link__aside;
+
+	&:hover{
+		color: $color__link__aside--hover;
+	}
+	
+	text-decoration: none;
+}
