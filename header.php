@@ -45,4 +45,12 @@
 	</header><!-- #masthead -->
 	<aside class="widget__area">
 		<h2>menu secondaire</h2>
+		<?php wp_nav_menu(array(
+			"menu" => "sidebar",
+			"container" => "nav"
+
+		))
+		
+		
+		?>
 	</aside>
