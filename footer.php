@@ -7,12 +7,11 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package underscore
- */
+ */?>
 
-?>
-
-	<footer>
+	<footer class="site__footer">
 		<p>college maisonneuve</p>
+		<small>tout droit reserver 2022</small>
 	</footer>
 </div>
 

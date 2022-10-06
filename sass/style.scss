@@ -25,6 +25,18 @@ roxanne
 
 //elements de base
 @import "base/body";
+@import "base/buttons";
+@import "base/fields";
 @import "base/heading";
-@import "base/simple";
+@import "base/hr";
 @import "base/links";
+@import "base/lists";
+@import "base/media";
+@import "base/simple";
+
+//composants
+@import "composants/nav_principale";
+
+//layouts
+@import "layouts/sidebar-content";
+
