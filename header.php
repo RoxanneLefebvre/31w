@@ -47,7 +47,8 @@
 		<h2>menu secondaire</h2>
 		<?php wp_nav_menu(array(
 			"menu" => "sidebar",
-			"container" => "nav"
+			"container" => "nav",
+			"container_class" => "menu__aside"
 
 		))
 		

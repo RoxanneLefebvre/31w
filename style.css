@@ -14,6 +14,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 roxanne
 */
 /*************************************************************couleur liens****************************************/
+/****************************************************************couleur link aside********************************/
 /*couleur field input*/
 /*couleur HR*/
 /*simple*/
@@ -459,6 +460,14 @@ a:hover, a:active {
   outline: 0;
 }
 
+.menu__aside a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.menu__aside a:hover {
+  color: rgb(25, 62, 245);
+}
+
 ul,
 ol {
   margin: 0 0 1.5em 3em;
@@ -586,10 +595,17 @@ big {
   text-align: center;
 }
 
-.site {
-  display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+.menu__aside {
+  display: flex;
+  flex-direction: column;
+}
+.menu__aside .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu__aside a {
+  text-decoration: none;
 }
 
 .site__header {
@@ -609,8 +625,15 @@ big {
   grid-area: footer;
 }
 
-.no-sidebar .site {
+.site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "sidebar" "main" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

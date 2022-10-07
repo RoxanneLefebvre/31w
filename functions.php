@@ -80,8 +80,31 @@ function under_scripts() {
 add_action( 'wp_enqueue_scripts', 'under_scripts' );
 
 
+/** filtre pour les element des menu */
 
 
 
 
+
+
+
+function igc31w_filtre_choix_menu($obj_menu, $arg){
+    //echo "/////////////////  obj_menu";
+    // var_dump($obj_menu);
+    //  echo "/////////////////  arg";
+    //  var_dump($arg);
+ 
+    if ($arg->menu == "sidebar"){
+    foreach($obj_menu as $cle => $value)
+    {
+      //  print_r($value);
+       //$value->title = substr($value->title,7);
+       $value->title = wp_trim_words($value->title,3,"...");
+        //echo $value->title . '<br>';
+     } 
+    }
+    //die();
+    return $obj_menu;
+}
+add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
