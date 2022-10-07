@@ -1,7 +1,12 @@
 .site__branding {
-    
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 .site__title {
+    
+       // font-size: clamp(2rem, 4vh, 5rem);
+        font-size: 15px;
     
 }
 .site__description {
