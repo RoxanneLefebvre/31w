@@ -127,5 +127,17 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
+
 	/* Repeat register_sidebar() code for additional sidebars. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-2',
+			'name'          => __( 'sidebar footer-2' ),
+			'description'   => __( 'deuxieme sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
