@@ -98,8 +98,9 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
     foreach($obj_menu as $cle => $value)
     {
       //  print_r($value);
-       //$value->title = substr($value->title,7);
-       $value->title = wp_trim_words($value->title,3,"...");
+       $value->title = substr($value->title, 8);
+       $value->title = substr($value->title, 0, -6);
+       $value->title = wp_trim_words($value->title,4,"...");
         //echo $value->title . '<br>';
      } 
     }
@@ -108,3 +109,23 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
+
+/********************************************************************init sidebar */
+
+
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+	/* Register the 'primary' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'primary',
+			'name'          => __( 'Primary Sidebar' ),
+			'description'   => __( 'A short description of the sidebar.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
+}

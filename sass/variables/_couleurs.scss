@@ -11,13 +11,13 @@ $color__link--visited:rgb(48, 24, 54);
 
 /****************************************************************couleur link aside********************************/
 $color__link__aside:rgb(0, 0, 0);
-$color__link__aside--hover:rgb(25, 62, 245);
+$color__link__aside--hover:rgb(79, 20, 122);
 
 $color__link--button:blue;
-$color__border--button:blue;
+$color__border--button:black;
 $color__background--button:gray;
-$color__border-button-hover:rgb(8, 8, 118);
-$color__border-button-focus:red;
+$color__border-button-hover:rgb(79, 20, 122);
+$color__border-button-focus:rgb(153, 25, 245);
 
 /*couleur field input*/
 $color__border--input:gray;
@@ -28,6 +28,6 @@ $color__text--input:rgb(0, 0, 0);
 $color__background--hr:rgb(197, 197, 238);
 
 /*simple*/
-$color__background--pre:rgb(0, 255, 76);
+$color__background--pre:rgba(92, 54, 106, 0.529);
 $color__border-abbr:purple;
 $color__background-ins:rgb(213, 19, 213);

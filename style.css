@@ -340,7 +340,6 @@ html {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
   font-family: arial;
   padding-left: 20px;
   display: flex;
@@ -356,7 +355,7 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   border: 1px solid;
-  border-color: blue;
+  border-color: black;
   border-radius: 3px;
   background: gray;
   color: rgba(0, 0, 0, 0.8);
@@ -367,7 +366,7 @@ button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  border-color: rgb(8, 8, 118);
+  border-color: rgb(79, 20, 122);
 }
 button:active, button:focus,
 input[type=button]:active,
@@ -376,7 +375,7 @@ input[type=reset]:active,
 input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
-  border-color: red;
+  border-color: rgb(153, 25, 245);
 }
 
 input[type=text],
@@ -428,6 +427,7 @@ textarea {
 }
 
 h1 {
+  font-size: 22px;
   font-weight: normal;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
@@ -465,7 +465,7 @@ a:hover, a:active {
   text-decoration: none;
 }
 .menu__aside a:hover {
-  color: rgb(25, 62, 245);
+  color: rgb(79, 20, 122);
 }
 
 ul,
@@ -537,7 +537,7 @@ address {
 }
 
 pre {
-  background: rgb(0, 255, 76);
+  background: rgba(92, 54, 106, 0.529);
   font-family: "Courier New", Courier, monospace;
   line-height: 0.8em;
   margin-bottom: 1.6em;
@@ -576,19 +576,50 @@ big {
   font-size: 11px;
   letter-spacing: 1px;
   gap: 60px;
-  padding: 15px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+  padding-top: 15px;
 }
 .menu-primaire-container .menu {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .menu-primaire-container .menu .menu-item a {
   text-decoration: none;
+  display: inline-block;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+  width: 100%;
 }
 
+@media screen and (min-width: 700px) {
+  .menu-primaire-container {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 60px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+  }
+  .menu-primaire-container .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .menu-primaire-container .menu .menu-item a {
+    text-decoration: none;
+    border-bottom: none;
+    border-width: 100%;
+  }
+}
 .site-title a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -598,6 +629,8 @@ big {
 .menu__aside {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 15px;
 }
 .menu__aside .menu {
   list-style: none;
@@ -608,17 +641,35 @@ big {
   text-decoration: none;
 }
 
+.site__branding {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.site__title {
+  font-size: 15px;
+}
+
 .site__header {
   grid-area: header;
 }
 
 .site__main {
+  margin-left: 20px;
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
 .widget__area {
   grid-area: sidebar;
+}
+.widget__area h2 {
+  font-size: 15px;
+  color: rgb(96, 12, 96);
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.392);
 }
 
 .site__footer {

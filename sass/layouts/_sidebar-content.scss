@@ -4,12 +4,21 @@
 }
 
 .site__main {
+	margin-left: 20px;
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
 .widget__area {
 	grid-area: sidebar;
+	h2 {
+		font-size: 15px;
+		color: rgb(96, 12, 96);
+		text-transform: uppercase;
+		padding: 5px;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+
+	}
 }
 
 .site__footer {
@@ -37,6 +46,9 @@
 			"header header"
 			"sidebar main"
 			"footer footer";
+
+		
+			
 	}
 }
  
