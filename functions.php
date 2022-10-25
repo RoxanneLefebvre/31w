@@ -115,12 +115,12 @@ add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
-	/* Register the 'primary' sidebar. */
+	/* Register the 'footer-1' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'primary',
-			'name'          => __( 'Primary Sidebar' ),
-			'description'   => __( 'A short description of the sidebar.' ),
+			'id'            => 'footer-1',
+			'name'          => __( 'sidebar footer-1' ),
+			'description'   => __( 'premier sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',

@@ -29,7 +29,7 @@
                         
                     <?php endwhile; ?>
                 <?php endif; ?>
-            ?>
+            
         </main>
 
     <?php
