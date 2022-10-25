@@ -7,11 +7,16 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package underscore
- */?>
+ */
+
+ ?>
 
 	<footer class="site__footer">
-		<p>college maisonneuve</p>
-		<small>tout droit reserver 2022</small>
+		<div><?php get_sidebar('primary'); ?></div>
+		<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eum. Expedita odit enim neque eveniet? Laborum iusto nostrum architecto tenetur sit, ad voluptates.</div>
+		<div>Lorem ipsum doloste, eum. Expedita odit enim neque eveniet? Laborum iusto nostrum architecto tenetur sit, ad voluptates.</div>
+		<div>Lorem ipsum dolor sit, amet consectetur aaborum iusto nostrumamet consectetur adipisicing elit. Iste, eum. Expedita odit enim neque eveniet? Laborum iusto nostrum .</div>
+		<small></small>
 	</footer>
 </div>
 
