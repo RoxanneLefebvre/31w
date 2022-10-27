@@ -140,4 +140,38 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-3',
+			'name'          => __( 'sidebar footer-3' ),
+			'description'   => __( '3ieme sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __( 'sidebar aside-1' ),
+			'description'   => __( 'premier sidebar aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'aside-2',
+			'name'          => __( 'sidebar aside-2' ),
+			'description'   => __( 'deuxieme sidebar aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
