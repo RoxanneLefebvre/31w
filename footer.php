@@ -13,14 +13,13 @@
 
 	<footer class="site__footer">
 		<div><?php get_sidebar('footer-1'); ?></div>
-		<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eum. Expedita odit enim neque eveniet? Laborum iusto nostrum architecto tenetur sit, ad voluptates.</div>
-		<div>Lorem ipsum doloste, eum. Expedita odit enim neque eveniet? Laborum iusto nostrum architecto tenetur sit, ad voluptates.</div>
-		<div>Lorem ipsum dolor sit, amet consectetur aaborum iusto nostrumamet consectetur adipisicing elit. Iste, eum. Expedita odit enim neque eveniet? Laborum iusto nostrum .</div>
-		<small></small>
-		<div><?php get_sidebar('footer-2'); ?></div>
-		<div>ceci est mon deuxieme sidebar footer-2</div>
 		
-		<small></small>
+		<div><?php get_sidebar('footer-2'); ?></div>
+
+		<div><?php get_sidebar('footer-3'); ?></div>
+		
+		
+		
 	</footer>
 </div>
 

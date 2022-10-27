@@ -11,6 +11,7 @@
 
 .widget__area {
 	grid-area: sidebar;
+	padding-left: 15px;
 	h2 {
 		font-size: 15px;
 		color: rgb(96, 12, 96);
@@ -19,6 +20,9 @@
 		border-bottom: 1px solid rgba(128, 128, 128, 0.392);
 
 	}
+}
+.widget__area-2 {
+	grid-area: sidebar-2;
 }
 
 .site__footer {
@@ -32,11 +36,11 @@
 	grid-template-areas:
 		"header"
 		"sidebar"
+		"sidebar-2"
 		"main"
 		"footer";
 
 		
-
 
 	@media screen and (min-width:700px){
 		
@@ -45,6 +49,7 @@
 		grid-template-areas:
 			"header header"
 			"sidebar main"
+			"sidebar-2 main"
 			"footer footer";
 
 		

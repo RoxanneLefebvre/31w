@@ -1,11 +1,31 @@
 .site__footer {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 100px;
     background-color: rgb(192, 190, 190);
+    margin-top: 50px;
+    height: 30vh;
+    align-items: center;
 }
 
-.site__footer div {
-    padding: 20px;
+.widget_nav_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
     
+}
+
+.sidebar-footer-1 {
+    flex-grow: 2;
+}
+
+footer .menu {
+    margin: 0;
+    list-style-type: none;
+}
+
+footer .menu li a{
+    
+    text-decoration: none;
 }
