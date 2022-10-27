@@ -7,7 +7,7 @@ ce site contient mes premiere creations, un carrousel, des widgets, des menus et
 
 
 
-https://prom1.sg-host.com/
-Roxanne Lefebvre
-septembre-octobree 2022
-Cegep maisonneuve
+[lien du site](https://prom1.sg-host.com/)
+#### Autrice Roxanne Lefebvre
+####  septembre-octobree 2022
+#### Cegep maisonneuve
