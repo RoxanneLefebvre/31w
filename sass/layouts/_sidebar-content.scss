@@ -9,8 +9,8 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area {
-	grid-area: sidebar;
+.site__menu {
+	grid-area: menu;
 	
 	h2 {
 		font-size: 15px;
@@ -21,8 +21,8 @@
 
 	}
 }
-.widget__area-2 {
-	grid-area: sidebar-2;
+.site__sidebar {
+	grid-area: sidebar;
 }
 
 .site__footer {
@@ -35,9 +35,9 @@
 	grid-template-columns: auto;
 	grid-template-areas:
 		"header"
-		"sidebar"
+		"menu"
 		"main"
-		"sidebar-2"
+		"sidebar"
 		"footer";
 
 		
@@ -48,8 +48,8 @@
 		grid-template-columns: ($size__site-sidebar) auto;
 		grid-template-areas:
 			"header header"
+			"menu main"
 			"sidebar main"
-			"sidebar-2 main"
 			". main"
 			"footer footer";
 
