@@ -13,10 +13,12 @@
 <?php get_header() ?>
 <main>
  
-    <h1>---- Template Evenement ------</h1>
+    <h1></h1>
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
-        <?php the_content() ?>        
+        <?php the_content() ?>          
+        <p>Adresse: <?php the_field('adresse');?></p>     
+        <p><?php the_field('date');?></p>     
    <?php endif ?>
 </main>
 <?php get_footer() ?>

@@ -467,11 +467,6 @@ a:hover, a:active {
   color: rgb(79, 20, 122);
 }
 
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
-}
-
 ul {
   list-style: disc;
 }
@@ -713,6 +708,10 @@ big {
   width: 25%;
 }
 
+.menu__evenement .menu-item a {
+  text-decoration: none;
+}
+
 .evenement__porte {
   background-color: rgb(193, 193, 224);
 }
@@ -722,6 +721,23 @@ big {
 }
 
 .evenement__stage {
+  background-color: rgb(120, 120, 218);
+}
+
+.menu__item__icone {
+  width: 100%;
+  height: auto;
+}
+
+.evenement__porte .menu__item__icone {
+  background-color: rgb(193, 193, 224);
+}
+
+.evenement__projet .menu__item__icone {
+  background-color: rgb(200, 149, 207);
+}
+
+.evenement__stage .menu__item__icone {
   background-color: rgb(120, 120, 218);
 }
 
