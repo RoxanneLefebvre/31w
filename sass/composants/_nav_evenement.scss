@@ -1,12 +1,32 @@
 .menu__evenement {
-    color: red;
-
+    
+    
 }
 
-.menu__evenement .menu {
-
+.menu__evenement .menu { //ul
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+    border: 1px solid black;
+    padding: 10px;
+    
 }
 
 .menu__evenement .menu-item {
+    width: 25%;
+    
 
+}
+
+.evenement__porte {
+    background-color: rgb(193, 193, 224);    
+}
+
+.evenement__projet {
+    background-color: rgb(200, 149, 207);    
+}
+
+.evenement__stage {
+    background-color: rgb(120, 120, 218);    
 }
