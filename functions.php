@@ -110,7 +110,14 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
+
+
+
+
 /********************************************************************filtre de menu EVENEMENT*/
+
+
+
 /* ----------------------------------------------------------- Ajout de la description dans menu */
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
@@ -190,3 +197,16 @@ function my_register_sidebars() {
 		)
 	);
 }
+
+
+/**
+ * fonction qui modifie la requete principale de wp (main query)
+ * les article qui saficheront dans la page dacceuil seront les article de categorie acceuil
+ */
+
+function igc31w_filtre_requete( $query ) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'category_name', 'accueil' );
+	}
+}
+add_action( 'pre_get_posts', 'igc31w_filtre_requete' );
