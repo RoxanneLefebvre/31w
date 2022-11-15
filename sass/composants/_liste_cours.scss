@@ -1,13 +1,66 @@
 .liste {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    color: #999;
+    padding: 60px 0;
+    justify-content: center;
+    justify-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 
 }
 
-.liste__cours {
+.liste__cours a {
+    width: calc(50% - 20px);
+ 
+}
+.liste__cours p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     
+ 
+}
+
+.liste__cours h1 a{
+    text-decoration: none;
+}
+
+.liste__cours h2{
+    font-size: 16px;
+    line-height: 1px;
+    align-self: baseline;
+}
+
+.liste__cours {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: calc(30% - 20px);
+    padding: 20px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all 0.3s ease;
+    place-items: center;
+    position: relative;
+    //border: 1px solid black;
+    overflow: hidden;
+    //background-color: #e8ecf2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
+    5px 5px 10px rgba(0, 0, 0, 0.25);
+
+  
     // flex: 0 1;
+
+}
+
+
+.liste__cours:hover {
+    box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
+    1px 1px 5px rgba(0, 0, 0, 0.3);
 
 }

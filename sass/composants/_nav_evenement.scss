@@ -7,20 +7,22 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    
-    border: 1px solid black;
     padding: 10px;
+    margin-right: 10px;
     
 }
 
 .menu__evenement .menu-item {
     width: 25%;
+    height: 350px;
+    
     
 
 }
 
 .menu__evenement .menu-item a {
     text-decoration: none;
+    color: white;
 }
 
 .menu__evenement .menu-item:hover {
@@ -31,22 +33,32 @@
 
 
 .evenement__porte {
-    background-color: rgb(193, 193, 224);    
+    background-image: url(https://eddym76.sg-host.com/wp-content/uploads/2022/08/multimedia-aha-awards-pubs-x-1.png);  
+    width: 100%;
+    height: auto; 
+    
 }
 
 .evenement__projet {
-    background-color: rgb(200, 149, 207);    
+     
+    background-image: url(https://kinsta.com/fr/wp-content/uploads/sites/4/2020/02/meilleures-pratiques-web-design-1024x512.jpg);  
+    width: 100%;
+    height: auto;
+ 
 }
 
 .evenement__stage {
-    background-color: rgb(120, 120, 218);    
+    
+    background-image: url(https://eddym76.sg-host.com/wp-content/uploads/2022/08/multimedia-aha-awards-pubs-x-1.png);  
+    width: 100%;
+    height: auto;  
 }
 
-.menu__item__icone{
-    width: 100%;
-    height: auto;
+// .menu__item__icone{
+//     width: 100%;
+//     height: auto;
     
-}
+// }
 
 
 
