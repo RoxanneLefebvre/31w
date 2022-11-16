@@ -6,15 +6,15 @@
 .menu__evenement .menu { //ul
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     padding: 10px;
     margin-right: 10px;
     
 }
 
 .menu__evenement .menu-item {
-    width: 25%;
-    height: 350px;
+    width: 33%;
+    height: 445px;
     
     
 
@@ -22,7 +22,9 @@
 
 .menu__evenement .menu-item a {
     text-decoration: none;
-    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 .menu__evenement .menu-item:hover {
@@ -33,27 +35,42 @@
 
 
 .evenement__porte {
-    background-image: url(https://eddym76.sg-host.com/wp-content/uploads/2022/08/multimedia-aha-awards-pubs-x-1.png);  
-    width: 100%;
-    height: auto; 
+    padding: 10px;
+    background-image: url(https://kinsta.com/fr/wp-content/uploads/sites/4/2022/05/principes-conception-web-1024x512.jpeg);  
+    background-repeat: no-repeat;
+    background-position: 60%50%;
+    background-color: #0000006b;
+    background-blend-mode: multiply;
     
 }
 
 .evenement__projet {
-     
+    padding: 10px;
     background-image: url(https://kinsta.com/fr/wp-content/uploads/sites/4/2020/02/meilleures-pratiques-web-design-1024x512.jpg);  
-    width: 100%;
-    height: auto;
- 
+    background-repeat: no-repeat;
+    background-position: 60% 30%;
+    background-color: #0000006b;
+    background-blend-mode: multiply;
+    
+    
 }
 
 .evenement__stage {
+    padding: 10px;
+    background-image: url(https://www.netsolutions.com/insights/wp-content/uploads/2021/09/how-to-build-a-web-app.jpg);  
+    background-repeat: no-repeat;
+    background-position: 60% 30%;
+    background-color: #0000006b;
+    background-blend-mode: multiply;
     
-    background-image: url(https://eddym76.sg-host.com/wp-content/uploads/2022/08/multimedia-aha-awards-pubs-x-1.png);  
-    width: 100%;
-    height: auto;  
 }
 
+.evenement__porte:hover, .evenement__projet:hover, .evenement__stage:hover {
+
+    background-color: #0000003a;
+    background-blend-mode: multiply;
+    
+}
 // .menu__item__icone{
 //     width: 100%;
 //     height: auto;
