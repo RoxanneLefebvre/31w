@@ -1,10 +1,11 @@
 .site__footer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
     background-color: rgb(192, 190, 190);
     margin-top: 50px;
-    height: 30vh;
+    height: auto;
     align-items: center;
 }
 
@@ -28,4 +29,15 @@ footer .menu {
 footer .menu li a{
     
     text-decoration: none;
+}
+
+
+@media screen and (max-width:835px) {
+    footer {
+
+        padding: 20px;
+    }
+
+
+    
 }

@@ -1,3 +1,4 @@
+@media screen and (min-width:300px) {
 .liste {
     display: flex;
     color: #999;
@@ -39,6 +40,7 @@
     justify-content: stretch;
     align-items: center;
     width: calc(30% - 20px);
+    min-width: 300px;
     padding: 20px;
     text-decoration: none;
     opacity: 1;
@@ -52,6 +54,7 @@
     border-radius: 6px;
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
     5px 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: -1;
 
   
     // flex: 0 1;
@@ -63,4 +66,9 @@
     box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
     1px 1px 5px rgba(0, 0, 0, 0.3);
 
+}
+
+
+
+    
 }
