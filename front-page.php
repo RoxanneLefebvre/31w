@@ -33,7 +33,12 @@
                         the_post();?>
                         <h1><a href="<?php the_permalink();?>">
                         <?php the_title(); ?></a></h1>
-                        <?php the_content(null, true); ?>
+                        
+                        <?php if ( has_post_thumbnail() ) {
+	                        the_post_thumbnail('thumbnail');
+                        } ?>
+
+                        <?php wp_trim_words(get_the_excerpt(), 10, "..."); ?>
                         
                     <?php endwhile; ?>
                 <?php endif; ?>

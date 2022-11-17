@@ -41,6 +41,13 @@ function under_setup() {
 		* provide it for us.
 		*/
         add_theme_support( 'title-tag' );
+		
+		add_theme_support( 'custom-logo', array(
+			'height' => 480,
+			'width'  => 720,
+		) );
+
+		add_theme_support( 'post-thumbnails' );
 
 
         	/*
@@ -122,7 +129,7 @@ add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"><img src="https://eddym76.sg-host.com/wp-content/uploads/2022/08/multimedia-aha-awards-pubs-x-1.png"></div></a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
               $item_output );
     }
     return $item_output;
