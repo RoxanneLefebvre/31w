@@ -25,6 +25,7 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site__header">
+		<?= get_custom_logo(); ?>
 			<?php wp_nav_menu(array(
 				"menu" => "Primaire",
 				"container"=>"nav"

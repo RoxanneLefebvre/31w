@@ -26,22 +26,28 @@
                 "menu" => "evenement",
                 "container"=>"nav",
                 "container_class" => "menu__evenement"
-                ));
+                ));?>
+
+            <section class="liste">
+
+                <?php
 
                 if ( have_posts() ) : 
                     while ( have_posts() ) :
                         the_post();?>
-                        <h1><a href="<?php the_permalink();?>">
-                        <?php the_title(); ?></a></h1>
-                        
-                        <?php if ( has_post_thumbnail() ) {
-	                        the_post_thumbnail('thumbnail');
-                        } ?>
+                        <article class="liste__cours">
+                            <h1><a href="<?php the_permalink();?>">
+                            <?php the_title(); ?></a></h1>
+                            
+                            <?= wp_trim_words(get_the_excerpt(), 10, "..."); ?>
+                            <?php if ( has_post_thumbnail() ) {
+                                the_post_thumbnail('medium');
+                            } ?>
 
-                        <?php wp_trim_words(get_the_excerpt(), 10, "..."); ?>
-                        
+                    </article>
                     <?php endwhile; ?>
                 <?php endif; ?>
+            </section>
             
         </main>
 

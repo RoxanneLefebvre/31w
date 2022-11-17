@@ -43,8 +43,8 @@ function under_setup() {
         add_theme_support( 'title-tag' );
 		
 		add_theme_support( 'custom-logo', array(
-			'height' => 480,
-			'width'  => 720,
+			'height' => 150,
+			'width'  => 150,
 		) );
 
 		add_theme_support( 'post-thumbnails' );
