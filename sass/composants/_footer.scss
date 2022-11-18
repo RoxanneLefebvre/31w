@@ -1,12 +1,22 @@
 .site__footer {
+    background-image: url(img/footer_wp.gif);
+    background-repeat: no-repeat;
+
+    background-position: -10% 300%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 100px;
-    background-color: rgb(192, 190, 190);
+    background-color: #99D7DA;
     margin-top: 50px;
     min-height: 400px;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.site__footer:hover {
+
+    background-position: -10% 220%;
+
 }
 
 .widget_nav_menu {
@@ -26,9 +36,17 @@ footer .menu {
     list-style-type: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 footer .menu li a{
     
     text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -38,6 +56,17 @@ footer .menu li a{
         padding: 20px;
     }
 
+    .site__footer {
+        background-position: 80% 300%;
+    }
+
+    .site__footer:hover {
+
+        background-position: 80% 220%;
+    
+    }
+
 
     
 }
+

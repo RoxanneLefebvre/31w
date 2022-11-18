@@ -6,6 +6,8 @@
 .menu__evenement .menu { //ul
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
     margin-right: 10px;
@@ -13,11 +15,10 @@
 }
 
 .menu__evenement .menu-item {
-    width: 33%;
+    width: 32%;
     height: 445px;
+    min-width: 400px;
     
-    
-
 }
 
 .menu__evenement .menu-item a {
@@ -90,6 +91,8 @@
 .evenement__stage .menu__item__icone {
     background-color: rgb(120, 120, 218);    
 }
+
+
 
 
 
