@@ -39,11 +39,24 @@
                         <article class="liste__cours">
                             <h1><a href="<?php the_permalink();?>">
                             <?php the_title(); ?></a></h1>
-                            
-                            <?= wp_trim_words(get_the_excerpt(), 10, "..."); ?>
                             <?php if ( has_post_thumbnail() ) {
                                 the_post_thumbnail('medium');
                             } ?>
+                            <?php 
+                            $myArray = get_the_category();
+                            $boolGalerie = false;
+                            foreach($myArray as $cle){
+                                if($cle->slug == "galerie"){
+                                    $boolGalerie = true;
+                                }
+                            }
+                            if($boolGalerie == true){
+                                the_content();
+                            }else {
+
+                                echo wp_trim_words(get_the_excerpt(), 10, "...");
+                            }
+                        ?>
 
                     </article>
                     <?php endwhile; ?>

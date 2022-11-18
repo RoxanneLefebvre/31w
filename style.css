@@ -811,7 +811,8 @@ big {
   justify-content: stretch;
   align-items: center;
   width: calc(30% - 20px);
-  min-width: 300px;
+  min-width: 350px;
+  max-width: 350px;
   padding: 20px;
   text-decoration: none;
   opacity: 1;
@@ -826,6 +827,18 @@ big {
 
 .liste__cours:hover {
   box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.liste__cours img {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.liste__cours h1 {
+  align-self: center;
+  min-height: 50px;
 }
 
 .site__branding {
