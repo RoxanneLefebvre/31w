@@ -18,6 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<style>.site__header { background-color:<?= get_theme_mod("site__title__background"); ?>;}</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -25,14 +26,16 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site__header">
+		<section class="site__nav__container">
 		<?= get_custom_logo(); ?>
-			<?php wp_nav_menu(array(
+		<?php wp_nav_menu(array(
 				"menu" => "Primaire",
 				"container"=>"nav"
 			))?>
+			</section>
 		<div class="site__branding">
 		
-			<h1 class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			
 				
 				
 			<?php

@@ -91,6 +91,13 @@ add_action( 'wp_enqueue_scripts', 'under_scripts' );
 
 
 
+//PERSONNALISATION DU BACKGROUND
+require_once("options/apparence.php");
+	
+
+
+
+
 
 
 /********************************************************************filtre de menu */

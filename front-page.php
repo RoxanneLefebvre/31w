@@ -20,6 +20,7 @@
     ?>
 
         <main class="site__main">
+            <h1>accueil</h1>
             <?php 
 
                 wp_nav_menu(array(
