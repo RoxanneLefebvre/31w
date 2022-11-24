@@ -32,7 +32,10 @@
 				"menu" => "Primaire",
 				"container"=>"nav"
 			))?>
-			<div><?php get_sidebar('nav_widget-1'); ?></div>
+			<div class="nav_widget-container">
+				<?php get_sidebar('nav_widget-1'); ?>
+				<?php get_sidebar('nav_widget-2'); ?>
+			</div>
 			</section>
 		<div class="site__branding">
 		

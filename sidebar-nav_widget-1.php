@@ -1,4 +1,4 @@
 
-<div id="sidebar-aside-1" class="sidebar sidebar-aside-1">
+<div id="sidebar-nav_widget-1" class="sidebar nav_widget-1">
 	<?php dynamic_sidebar( 'nav_widget-1' ); ?>
 </div>

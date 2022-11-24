@@ -77,6 +77,12 @@
     
     
     .menu-primaire-container { //nav
+
+        .nav_widget-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
         
         display: flex;
         flex-direction: row;
@@ -108,6 +114,8 @@
             }
         }
     }
+
+   
 
 
     

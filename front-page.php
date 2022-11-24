@@ -54,7 +54,7 @@
                                 the_content();
                             }else {
 
-                                echo wp_trim_words(get_the_excerpt(), 10, "...");
+                                echo wp_trim_words(get_the_excerpt(), 20, "...");
                             }
                         ?>
 
