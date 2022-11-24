@@ -1,9 +1,12 @@
 # 31w
 
-TP2
+Epreuve finale
 Continuation de mon premier site Wordpress
 
 ce site contient mes premiere creations, un carrousel, des widgets, des menus et un footer.
+
+pour lepreuve finale jai rajouter 2 widget dans la nav, recherche et icone.
+ainsi quune page search.php qui affiche les resultats.
 
 
 
