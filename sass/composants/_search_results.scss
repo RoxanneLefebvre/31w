@@ -7,14 +7,17 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
     border-bottom: 1px black dotted;
     margin-bottom: 20px;
 }
 
 .search__results-item-title {
-    width: 60%;
+    width: 100%;
 }
 
 .search__results-item-p {
-    width: 50%;
+    width: 100%;
+    padding: 10px;
+    
 }
