@@ -1,0 +1,20 @@
+.search__h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.search__results-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px black dotted;
+    margin-bottom: 20px;
+}
+
+.search__results-item-title {
+    width: 60%;
+}
+
+.search__results-item-p {
+    width: 50%;
+}

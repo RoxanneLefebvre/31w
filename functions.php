@@ -253,3 +253,8 @@ function igc31w_filtre_requete( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'igc31w_filtre_requete' );
+
+// function wpb_total_posts() { 
+// 	$total = wp_count_posts()->publish;
+// 	echo 'Total Posts: ' . $total;
+// 	} 
